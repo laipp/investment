@@ -1,0 +1,29 @@
+$baseColor:#06816c;
+$basebgColor:#ccc;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 50px;
+}
+
+body{
+    background:$basebgColor;
+}
+
+// reset header
+.mint-header{
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background: #000;
+}
+.mint-header-title{
+    font-size: 0.35rem;
+    color:#fff;
+}
+.mintui-back{
+    font-size: 0.5rem;
+}
