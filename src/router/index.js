@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import personalCenter from '@/views/personal-center' //个人中心
 import assetIndex from '@/views/asset-index' //资产管理
 import assetAccout from '@/views/asset-accout' //我的资产
+import assetRecharge from '@/views/asset-recharge' //余额充值
+import assetWithdraw from '@/views/asset-withdraw' //余额提现
 import assetDetail from '@/views/asset-detail' //收支明细 
 import assetReserve from '@/views/asset-reserve' //账户预留
 import beikeIndex from '@/views/beike-index' //贝壳投资
@@ -53,6 +55,16 @@ export default new Router({
       path: '/assetReserve',
       name: 'assetReserve',
       component: assetReserve
+    },
+    {
+      path: '/assetRecharge',
+      name: 'assetRecharge',
+      component: assetRecharge
+    },
+    {
+      path: '/assetWithdraw',
+      name: 'assetWithdraw',
+      component: assetWithdraw
     }
   ]
 })

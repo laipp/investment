@@ -5,14 +5,82 @@
         <mt-button icon="back"></mt-button>
       </router-link>
     </mt-header>
-    我的资产
+    <div class="asset-ct">
+      <div class="asset-cash">
+        <div class="asset-cash-head">
+          <div class="cash-img">
+            <img src="../assets/images/asset-cash-icon1.png" alt="">
+            <div>现金</div>
+          </div>
+          <div class="cash">32.00</div>
+        </div>
+        <div class="asset-btn">
+          <router-link to="/assetRecharge"><div>充值</div></router-link>
+          <router-link to="/assetWithdraw"><div>提现</div></router-link>
+        </div>
+      </div>
+      <div class="asset-beike">
+        <div class="asset-cash-head">
+          <div class="cash-img">
+            <img src="../assets/images/asset-cash-icon2.png" alt="">
+            <div>贝壳</div>
+          </div>
+          <div class="asset-detail">
+            <div class="asset-detail-list"><span>1.00</span><div>当前售价</div></div>
+            <div class="asset-detail-list"><span>20</span><div>当前数量</div></div>
+            <div class="asset-detail-list"><span>20.00</span><div>资产价值</div></div>
+            <div class="asset-detail-list about-beike"><div>关于贝壳</div></div>
+          </div>
+        </div>
+        <div class="asset-btn">
+          <div>购买</div>
+          <div>赎回</div>
+        </div>
+      </div>
+      <div class="asset-bike">
+        <div class="asset-cash-head">
+          <div class="cash-img">
+            <img src="../assets/images/asset-cash-icon3.png" alt="">
+            <div>单车</div>
+          </div>
+          <div class="asset-detail">
+            <div class="asset-detail-list"><span>1.00</span><div>当前售价</div></div>
+            <div class="asset-detail-list"><span>20</span><div>当前数量</div></div>
+            <div class="asset-detail-list"><span>20.00</span><div>资产价值</div></div>
+            <div class="asset-detail-list about-beike"><div>关于单车</div></div>
+          </div>
+        </div>
+        <div class="asset-btn">
+          <div>购买</div>
+          <div>赎回</div>
+        </div>
+      </div>
+      <div class="asset-paper-sale">
+        <div class="asset-cash-head">
+          <div class="cash-img">
+            <img src="../assets/images/asset-cash-icon4.png" alt="">
+            <div>售纸机</div>
+          </div>
+          <div class="asset-detail">
+            <div class="asset-detail-list"><span>1.00</span><div>当前售价</div></div>
+            <div class="asset-detail-list"><span>20</span><div>当前数量</div></div>
+            <div class="asset-detail-list"><span>20.00</span><div>资产价值</div></div>
+            <div class="asset-detail-list about-beike"><div>关于售纸机</div></div>
+          </div>
+        </div>
+        <div class="asset-btn">
+          <div>认购</div>
+          <div>赎回</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // import headerItem from '@/components/header';
 export default {
-  name: 'contactUs',
+  name: 'assetAccount',
   data () {
     return {
     }
@@ -26,74 +94,99 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 $baseColor:#06816c;
-.portrait{
-  height: 1.8rem;
-  background: $baseColor;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  img {
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #ccc;
-    border-radius: 50%;
-  }
+// 25907e
+.asset-ct>div{
+    background: #fff;
+    margin-bottom:.1rem;
+    overflow: hidden;
+    padding-bottom: .2rem;
 }
-.page-select{
-  background: #328072;
-  width: 100%;
+.asset-cash-head{
   overflow: hidden;
-  div{
+  >div{
     float: left;
-    width: 50%;
-    height:0.88rem;
-    line-height: 0.88rem;
-    font-size: 0.36rem;
-    text-align: center;
-    color:#fff;
-    i{
-      font-style: normal;
-    }
+    font-size:0.96rem;
+  }
+  .cash{
+    margin-left:0.5rem;
+    text-align: left;
+    line-height:2.4rem;
+    font-weight: bold;
   }
 }
-.page-content-list{
-  height: 0.88rem;
-  line-height:0.88rem;
-  font-size: 0.32rem;
-  color:$baseColor;
-  background: #eee;
-  border-bottom:1px solid #ccc;
-  padding:0 0.5rem;
+.cash-img{
+  width:30%;
+  text-align:right;
+  margin-right:1rem;
+  img{
+    width: 0.96rem;
+    height:auto;
+    margin:0.32rem 0 0;
+  }
+  div{
+    font-size: 0.36rem;
+    color:#333;
+  }
+}
+.asset-btn{
   div{
     float: left;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    height: 100%;
-    margin-right:0.2rem;
-    img{
-      width:0.44rem;
-      height:auto;
-    }
+    width:34%;
+    margin:0 8%;
+    height: 0.88rem;
+    font-size: 0.36rem;
+    color:$baseColor;
+    border:1px solid $baseColor;
+    border-radius: 0.1rem;
+    box-sizing: border-box;
+    text-align: center;
+    line-height:0.88rem;
   }
-  span{
-    float: right;
-    color:#999;
-    margin-right:0.25rem;
+}
+.asset-beike img{
+  margin:0.57rem 0 0.1rem;
+}
+.asset-bike img{
+  margin:0.39rem 0 0.1rem;
+}
+.asset-paper-sale img{
+  width:0.6rem;
+  margin-right:0.2rem;
+}
+.asset-detail{
+  width:3.74rem;
+  height:2.2rem;
+  margin:0.2rem 0;
+}
+.asset-detail-list{
+  width:50%;
+  float: left;
+  height:1.1rem;
+  overflow: hidden;
+  font-size: 0.38rem;
+  color:#f40;
+  box-sizing: border-box;
+  text-align: center;
+  padding:0.1rem 0;
+  div{
+    font-size: 0.24rem;
+    margin-top:0.05rem;
+    color:#666;
   }
-  i{
-    float: right;
-    margin-top:0.31rem;
-    width:0.2rem;
-    height: 0.3rem;
-    background:url('../assets/images/personal-center-icon5.png') no-repeat 0 0;
-    background-size: 100% 100%;
-  }
+}
+.asset-detail-list:nth-of-type(1){
+  border-right:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+.asset-detail-list:nth-of-type(2){
+  border-bottom:1px solid #eee;
+}
+.asset-detail-list:nth-of-type(3){
+  border-right:1px solid #eee;
+}
+.about-beike div{
+  margin-top:0;
+  line-height:1.2rem;
+  text-decoration:underline;
 }
 </style>
