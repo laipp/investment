@@ -51,6 +51,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 $baseColor:#06816c;
+$basebgColor:#f3f3f3;
+.page-ct{
+  background: $basebgColor;
+}
 .withdraw-head{
   width:100%;
   height: 2.8rem;

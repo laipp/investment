@@ -16,9 +16,17 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background:$basebgColor;
 }
 
+#beike{
+    width: 100%;
+    height:100%;
+}
+.page-ct{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+}
 // reset header
 .mint-header{
     position: fixed;
@@ -39,7 +47,8 @@ body{
 .page-ct{
     width:100%;
     padding-top:0.88rem;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 // reset message prompt

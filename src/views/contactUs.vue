@@ -5,14 +5,17 @@
         <mt-button icon="back"></mt-button>
       </router-link>
     </mt-header>
-    
+    <div class="logo"><img src="../assets/images/logo.png" alt=""></div>
+    <div class="intro">
+      刘强东与记者的交流中还提到了自己的“创业天赋”，他认为这是一种家族遗传，自己最早的创业启蒙应是从父辈、祖辈听到的创业故事。他认为其中最有价值的东西，便是分享财富。而成功的秘诀无他——应该保持不断且积极的学习，努力工作。
+    </div>
   </div>
 </template>
 
 <script>
 // import headerItem from '@/components/header';
 export default {
-  name: 'contactUs',
+  name: 'aboutUs',
   data () {
     return {
     }
@@ -26,74 +29,27 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 $baseColor:#06816c;
-.portrait{
-  height: 1.8rem;
-  background: $baseColor;
+body{
+  background: #fff;
+}
+.logo{
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  img {
-    width: 1.2rem;
-    height: 1.2rem;
-    background: #ccc;
-    border-radius: 50%;
+  padding:0.7rem 0;
+  img{
+    width:2.38rem;
+    height:2.38rem;
   }
 }
-.page-select{
-  background: #328072;
-  width: 100%;
-  overflow: hidden;
-  div{
-    float: left;
-    width: 50%;
-    height:0.88rem;
-    line-height: 0.88rem;
-    font-size: 0.36rem;
-    text-align: center;
-    color:#fff;
-    i{
-      font-style: normal;
-    }
-  }
-}
-.page-content-list{
-  height: 0.88rem;
-  line-height:0.88rem;
-  font-size: 0.32rem;
-  color:$baseColor;
-  background: #eee;
-  border-bottom:1px solid #ccc;
-  padding:0 0.5rem;
-  div{
-    float: left;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    height: 100%;
-    margin-right:0.2rem;
-    img{
-      width:0.44rem;
-      height:auto;
-    }
-  }
-  span{
-    float: right;
-    color:#999;
-    margin-right:0.25rem;
-  }
-  i{
-    float: right;
-    margin-top:0.31rem;
-    width:0.2rem;
-    height: 0.3rem;
-    background:url('../assets/images/personal-center-icon5.png') no-repeat 0 0;
-    background-size: 100% 100%;
-  }
+.intro{
+  padding:0 0.45rem 0 0.35rem;
+  font-size: 0.28rem;
+  line-height:0.46rem;
+  text-indent: 2em;
+  color:#444;
 }
 </style>

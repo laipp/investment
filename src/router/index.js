@@ -8,8 +8,13 @@ import assetWithdraw from '@/views/asset-withdraw' //余额提现
 import assetDetail from '@/views/asset-detail' //收支明细 
 import assetReserve from '@/views/asset-reserve' //账户预留
 import beikeIndex from '@/views/beike-index' //贝壳投资
+import beikeBuy from '@/views/beike-buy' //购买贝壳
+import beikeUse from '@/views/beike-use' //贝壳使用
+import beikeAbout from '@/views/beike-about' //贝壳使用
 import aboutUs from '@/views/aboutUs' //关于我们
 import contactUs from '@/views/contactUs' //联系我们
+import myBike from '@/views/my-bike' // 我的单车
+import bikeBuy from '@/views/bike-buy' // 单车特权
 
 
 Vue.use(Router)
@@ -65,6 +70,31 @@ export default new Router({
       path: '/assetWithdraw',
       name: 'assetWithdraw',
       component: assetWithdraw
+    },    
+    {
+      path: '/beikeBuy',
+      name: 'beikebuy',
+      component: beikeBuy
+    },
+    {
+      path: '/beikeUse',
+      name: 'beikeUse',
+      component: beikeUse
+    },
+    {
+      path: '/beikeAbout',
+      name: 'beikeAbout',
+      component: beikeAbout
+    },
+    {
+      path: '/bikeBuy',
+      name: 'bikeBuy',
+      component: bikeBuy
+    },
+    {
+      path: '/myBike',
+      name: 'myBike',
+      component: myBike
     }
   ]
 })

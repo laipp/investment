@@ -49,6 +49,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 $baseColor:#06816c;
+
 .recharge-head{
   width:100%;
   height:3.6rem;

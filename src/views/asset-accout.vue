@@ -29,12 +29,12 @@
             <div class="asset-detail-list"><span>1.00</span><div>当前售价</div></div>
             <div class="asset-detail-list"><span>20</span><div>当前数量</div></div>
             <div class="asset-detail-list"><span>20.00</span><div>资产价值</div></div>
-            <div class="asset-detail-list about-beike"><div>关于贝壳</div></div>
+            <div class="asset-detail-list about-beike"><router-link to="/beikeAbout"><div>关于贝壳</div></router-link></div>
           </div>
         </div>
         <div class="asset-btn">
-          <div>购买</div>
-          <div>赎回</div>
+          <router-link to="/beikeBuy"><div>购买</div></router-link>
+          <router-link to="/beikeUse"><div>赎回</div></router-link>
         </div>
       </div>
       <div class="asset-bike">
@@ -51,8 +51,8 @@
           </div>
         </div>
         <div class="asset-btn">
-          <div>购买</div>
-          <div>赎回</div>
+          <router-link to="/bikeBuy"><div>购买</div></router-link>
+          <router-link to="/myBike"><div>赎回</div></router-link>
         </div>
       </div>
       <div class="asset-paper-sale">
@@ -94,7 +94,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 $baseColor:#06816c;
-// 25907e
+$basebgColor:#f3f3f3;
+.page-ct{
+  background: $basebgColor;
+}
 .asset-ct>div{
     background: #fff;
     margin-bottom:.1rem;

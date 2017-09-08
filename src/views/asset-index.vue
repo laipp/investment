@@ -49,6 +49,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 $baseColor:#06816c;
+$basebgColor:#f3f3f3;
+.page-ct{
+  background: $basebgColor;
+}
 .page-head{
   padding:0.6rem 0;
   background: $baseColor;
@@ -82,7 +86,7 @@ $baseColor:#06816c;
   line-height:0.88rem;
   font-size: 0.32rem;
   color:$baseColor;
-  background: #eee;
+  background: #fff;
   border-bottom:1px solid #ccc;
   padding:0 0.5rem;
   div{

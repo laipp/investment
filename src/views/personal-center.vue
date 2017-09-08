@@ -56,6 +56,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 $baseColor:#06816c;
+$basebgColor:#f3f3f3;
+.page-ct{
+  background: $basebgColor;
+}
 .portrait{
   height: 1.8rem;
   background: $baseColor;
