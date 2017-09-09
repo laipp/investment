@@ -5,9 +5,13 @@ module.exports = {
   build: {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
-    assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsRoot: path.resolve(__dirname, '../dist'), 
+    // 绝对路径
+    assetsSubDirectory: '', // 静态资源的前置文件
+    assetsPublicPath: './', // 静态资源的引用前缀
+    // 相对路径
+    // assetsSubDirectory: 'static', 
+    // assetsPublicPath: '/', 
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.

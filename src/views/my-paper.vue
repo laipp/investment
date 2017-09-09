@@ -32,10 +32,48 @@
           </div>
           <div class="no-more">没有更多了</div>
         </div>
-      </mt-tab-container-item>
+      </mt-tab-container-item>      
       <mt-tab-container-item id="2">
-      </mt-tab-container-item>
+        <div class="goods-list">
+          <div class="goods-img">
+            <div><img src="../assets/images/asset-cash-icon4.png" alt=""></div>
+            <i>¥998.0</i>
+          </div>
+          <div class="goods-detail">
+            <h1>NO.122434</h1>
+            <p>商家：新天地香港城</p>
+            <div class="profit">
+              <p>昨日收益：2.10</p>
+              <p>7日收益：12.10</p>
+            </div>
+          </div>
+          <div class="goods-btn">
+            <div class="time">2017年08月13日</div>
+            <div class="buy-btn" @click="popupVisible = !popupVisible">赎回</div>
+          </div>
+          <div class="no-more">没有更多了</div>
+        </div>
+      </mt-tab-container-item>      
       <mt-tab-container-item id="3">
+        <div class="goods-list">
+          <div class="goods-img">
+            <div><img src="../assets/images/asset-cash-icon4.png" alt=""></div>
+            <i>¥998.0</i>
+          </div>
+          <div class="goods-detail">
+            <h1>NO.122434</h1>
+            <p>商家：新天地香港城</p>
+            <div class="profit">
+              <p>昨日收益：2.10</p>
+              <p>7日收益：12.10</p>
+            </div>
+          </div>
+          <div class="goods-btn">
+            <div class="time">2017年08月13日</div>
+            <div class="buy-btn" @click="popupVisible = !popupVisible">赎回</div>
+          </div>
+          <div class="no-more">没有更多了</div>
+        </div>
       </mt-tab-container-item>
     </mt-tab-container>
     <!-- 弹框 -->
@@ -72,24 +110,24 @@ export default {
 $baseColor:#06816c;
 .page-ct{
   background: #e6e6e6;
-}
-.mint-navbar{
-  height: 0.88rem;
-  background: #fff;
-}
-.mint-navbar .mint-tab-item{
-  padding:0.14rem 0;
-}
-.mint-tab-item-label{
-  line-height: 0.6rem;
-  font-size: 0.36rem;
-  color:#b3b3b3;
-}
-.mint-navbar .mint-tab-item.is-selected{
-  border-bottom: 2px solid $baseColor;
-}
-.mint-navbar .mint-tab-item.is-selected .mint-tab-item-label{
-  color: $baseColor;
+  .mint-navbar{
+    height: 0.88rem;
+    background: #fff;
+  }
+  .mint-navbar .mint-tab-item{
+    padding:0.14rem 0;
+  }
+  .mint-tab-item-label{
+    line-height: 0.6rem;
+    font-size: 0.36rem;
+    color:#b3b3b3;
+  }
+  .mint-navbar .mint-tab-item.is-selected{
+    border-bottom: 2px solid $baseColor;
+  }
+  .mint-navbar .mint-tab-item.is-selected .mint-tab-item-label{
+    color: $baseColor;
+  }
 }
 .goods-list{
   margin-top:0.2rem;

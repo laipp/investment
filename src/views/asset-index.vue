@@ -71,10 +71,9 @@ $basebgColor:#f3f3f3;
   color:#fff;
   text-align: center;
   .mint-swipe{
-    padding:0.2rem 0 0.7rem;
+    padding:0.2rem 0 0;
   }
   .mint-swipe-indicators{
-    bottom:0.8rem;
     .mint-swipe-indicator{
       background: #aeabb0;
       opacity: 0.8;

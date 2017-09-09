@@ -34,6 +34,9 @@ export default {
 $baseColor:#06816c;
 .page-ct{
   background: #f3f3f3;
+  .mint-header{
+    background:$baseColor;
+  }
 }
 .beike-detail{
   margin:0.3rem 0.15rem;

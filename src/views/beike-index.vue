@@ -12,13 +12,13 @@
       <img src="../assets/images/beike-banner2.png" alt="">
     </div>
     <div class="beike-item-ct">
-      <router-link to="/myPaper" >
+      <router-link to="/paperBuy" >
         <div class="beike-item">
           <img src="../assets/images/beike-icon1.png" alt="">
           <p>售纸机投资</p>
         </div>     
       </router-link> 
-      <router-link to="/aboutBike" > 
+      <router-link to="/bikeBuy" > 
         <div class="beike-item">
           <img src="../assets/images/beike-icon2.png" alt="">
           <p>单车投资</p>

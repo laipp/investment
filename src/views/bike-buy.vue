@@ -1,8 +1,8 @@
 <template>
   <div class="page-ct">
     <mt-header title="单车特权">
-      <router-link to="/assetAccout" slot="left">
-        <mt-button icon="back"></mt-button>
+      <router-link to="" slot="left">
+        <mt-button icon="back" @click="goBackFunc"></mt-button>
       </router-link>
     </mt-header>
     <div class="bike-ct">
@@ -98,7 +98,10 @@ export default {
     },
     increaceHandle(){
       this.count++;
-    }   
+    },
+    goBackFunc(){
+      history.go(-1)
+    } 
      
   }
 }
@@ -108,6 +111,7 @@ export default {
 <style lang="scss" scoped>
 $baseColor:#06816c;
 .page-ct{
+  background: #fff;
   padding-bottom:0.8rem;
 }
 .bike-ct{

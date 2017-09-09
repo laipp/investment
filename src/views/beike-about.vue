@@ -1,8 +1,8 @@
 <template>
   <div class="page-ct">
     <mt-header title="关于贝壳">
-      <router-link to="/beikeBuy" slot="left">
-        <mt-button icon="back"></mt-button>
+      <router-link to="" slot="left">
+        <mt-button icon="back" @click="goBackFunc"></mt-button>
       </router-link>
     </mt-header>
     <div class="about-detail">
@@ -22,8 +22,10 @@ export default {
     return {
     }
   },
-  components:{
-    // headerItem
+  methods:{
+    goBackFunc(){
+      history.go(-1);
+    }
   }
 }
 </script>
@@ -33,9 +35,9 @@ export default {
 $baseColor:#06816c;
 .page-ct{
   background: #f3f3f3;
-}
-.mint-header{
-  background:$baseColor;
+  .mint-header{
+    background:$baseColor;
+  }
 }
 .about-detail{
   margin:0.3rem 0.15rem 0;
