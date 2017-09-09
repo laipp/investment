@@ -6,12 +6,24 @@
       </router-link>
     </mt-header>
     <div class="page-head">
-      <div class="yesterday-income">3.62</div>
-      <div class="yesterday-income-tips">昨日至今收益：元</div>
-      <div class="income-addtion">
-        <div>7天累计： 0.00元</div>
-        <div>7天年化： 0.00%</div>
-      </div>
+      <mt-swipe :auto="10000">
+        <mt-swipe-item>
+          <div class="yesterday-income">3.62</div>
+          <div class="yesterday-income-tips">昨日车辆收益：元／辆</div>
+          <div class="income-addtion">
+            <div>7天累计： 0.00元</div>
+            <div>7天年化： 0.00%</div>
+          </div>
+        </mt-swipe-item>
+        <mt-swipe-item>
+          <div class="yesterday-income">3.62</div>
+          <div class="yesterday-income-tips">昨日纸巾收益：元</div>
+          <div class="income-addtion">
+            <div>7天累计： 0.00元</div>
+            <div>7天年化： 0.00%</div>
+          </div>
+        </mt-swipe-item>
+      </mt-swipe>
     </div>
     <div class="page-content">
       <div class="page-content-list">
@@ -47,17 +59,30 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
+<style lang="scss">
 $baseColor:#06816c;
 $basebgColor:#f3f3f3;
 .page-ct{
   background: $basebgColor;
 }
 .page-head{
-  padding:0.6rem 0;
+  height:4rem;
   background: $baseColor;
   color:#fff;
   text-align: center;
+  .mint-swipe{
+    padding:0.2rem 0 0.7rem;
+  }
+  .mint-swipe-indicators{
+    bottom:0.8rem;
+    .mint-swipe-indicator{
+      background: #aeabb0;
+      opacity: 0.8;
+    }
+    .mint-swipe-indicator.is-active {
+      background: #fff;
+    }
+  }
   .yesterday-income{
     font-size: 1.12rem;
   }
@@ -117,5 +142,8 @@ $basebgColor:#f3f3f3;
     background:url('../assets/images/personal-center-icon5.png') no-repeat 0 0;
     background-size: 100% 100%;
   }
+}
+.mint-swipe{
+  width: 100%;
 }
 </style>

@@ -5,7 +5,7 @@
         <mt-button icon="back"></mt-button>
       </router-link>
     </mt-header>
-    <div class="logo"><img src="../assets/images/logo.png" alt=""></div>
+    <div class="logo"><img src="../assets/images/logo-1.png" alt=""></div>
     <div class="intro">
       刘强东与记者的交流中还提到了自己的“创业天赋”，他认为这是一种家族遗传，自己最早的创业启蒙应是从父辈、祖辈听到的创业故事。他认为其中最有价值的东西，便是分享财富。而成功的秘诀无他——应该保持不断且积极的学习，努力工作。
     </div>
@@ -42,7 +42,7 @@ body{
   padding:0.7rem 0;
   img{
     width:2.38rem;
-    height:2.38rem;
+    height:auto;
   }
 }
 .intro{

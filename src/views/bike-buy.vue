@@ -60,17 +60,17 @@
       v-model="popupVisible">
       <img @click="popupVisible = !popupVisible" class="close-btn" src="../assets/images/close-btn.png" alt="">
       <div class="details">
-        <p>1.同一用户可成为多辆车的车主;</p>
-        <p>2.同一用户可成为多辆车的车主</p>
-        <p>3.同一用户可成为多辆车的车主</p>
-        <p>4.同一用户可成为多辆车的车主</p>
-        <p>5.同一用户可成为多辆车的车主</p>
+        <p>1.同一用户可成为多辆车的车主；</p>
+        <p>2.成为车主期间可享受任意单车免费骑行；</p>
+        <p>3.车主可享受单车租金，广告，流量等收益；</p>
+        <p>4.车主收益将在成为车主后的次日开始享受；</p>
+        <p>5.推荐新人成为车主，奖励丰厚。</p>
       </div>
       <div class="price">598.00</div>
       <div class="size">
-        <button>-</button>
+        <div @click="decreaceHandle" :class="{diabled_btn:count==1}">-</div>
         <input type="text" class="size-count" v-model="count">
-        <button>+</button>
+        <div @click="increaceHandle">+</div>
       </div>
       <div class="tips">确认支付，即表示已阅读并同意<i>《车主委托协议》</i></div>
       <input type="text" class="invite-code" placeholder="请输入邀请码" >
@@ -91,7 +91,15 @@ export default {
       count:1,
     }
   },
-  methods:{      
+  methods:{ 
+    decreaceHandle(){
+      this.count--;
+      if(this.count<1){this.count=1}
+    },
+    increaceHandle(){
+      this.count++;
+    }   
+     
   }
 }
 </script>
@@ -182,12 +190,6 @@ $baseColor:#06816c;
     border:0 none;
   }
 }
-.mint-popup{
-  width:90%;
-  box-sizing: border-box;
-  border-radius: 0.1rem;
-  text-align: center;
-}
 .details{
   margin:0.4rem auto 0.3rem;
   p{
@@ -211,16 +213,20 @@ $baseColor:#06816c;
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
-  button{
+  div{
     display: inline-block;
     width:0.56rem;
     height: 0.56rem;
-    line-height:0.3rem;
+    line-height:0.5rem;
     background:$baseColor;
     color:#fff;
     border:0 none;
     border-radius: 0.1rem;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
+  }
+  .diabled_btn{
+    background: #ccc;
+    cursor: not-allowed;
   }
   input{
     display: inline-block;

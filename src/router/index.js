@@ -15,6 +15,12 @@ import aboutUs from '@/views/aboutUs' //关于我们
 import contactUs from '@/views/contactUs' //联系我们
 import myBike from '@/views/my-bike' // 我的单车
 import bikeBuy from '@/views/bike-buy' // 单车特权
+import aboutBike from '@/views/about-bike' // 关于单车
+import aboutPaper from '@/views/about-paper' // 关于售纸机
+import paperBuy from '@/views/paper-buy' // 售纸机认购
+import myPaper from '@/views/my-paper' // 我的售纸机
+import login from '@/views/login' // 手机登录
+import loginIdentify from '@/views/login-identify' // 实名认证
 
 
 Vue.use(Router)
@@ -95,6 +101,37 @@ export default new Router({
       path: '/myBike',
       name: 'myBike',
       component: myBike
+    },
+    {
+      path: '/aboutBike',
+      name: 'aboutBike',
+      component: aboutBike
+    },
+    {
+      path: '/aboutPaper',
+      name: 'aboutPaper',
+      component: aboutPaper
+    },
+    {
+      path: '/paperBuy',
+      name: 'paperBuy',
+      component: paperBuy
+    },
+    {
+      path: '/myPaper',
+      name: 'myPaper',
+      component: myPaper
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
+    {
+      path: '/loginIdentify',
+      name: 'loginIdentify',
+      component: loginIdentify
     }
+    
   ]
 })

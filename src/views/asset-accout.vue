@@ -47,7 +47,7 @@
             <div class="asset-detail-list"><span>1.00</span><div>当前售价</div></div>
             <div class="asset-detail-list"><span>20</span><div>当前数量</div></div>
             <div class="asset-detail-list"><span>20.00</span><div>资产价值</div></div>
-            <div class="asset-detail-list about-beike"><div>关于单车</div></div>
+            <div class="asset-detail-list about-beike"><router-link to="/aboutBike"><div>关于单车</div></router-link></div>
           </div>
         </div>
         <div class="asset-btn">
@@ -65,12 +65,12 @@
             <div class="asset-detail-list"><span>1.00</span><div>当前售价</div></div>
             <div class="asset-detail-list"><span>20</span><div>当前数量</div></div>
             <div class="asset-detail-list"><span>20.00</span><div>资产价值</div></div>
-            <div class="asset-detail-list about-beike"><div>关于售纸机</div></div>
+            <div class="asset-detail-list about-beike"><router-link to="/aboutPaper"><div>关于售纸机</div></router-link></div>
           </div>
         </div>
         <div class="asset-btn">
-          <div>认购</div>
-          <div>赎回</div>
+          <router-link to="/paperBuy"><div>购买</div></router-link>
+          <router-link to="/myPaper"><div>赎回</div></router-link>
         </div>
       </div>
     </div>
