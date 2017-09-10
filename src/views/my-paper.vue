@@ -120,7 +120,7 @@ $baseColor:#06816c;
   .mint-tab-item-label{
     line-height: 0.6rem;
     font-size: 0.36rem;
-    color:#b3b3b3;
+    color:#999;
   }
   .mint-navbar .mint-tab-item.is-selected{
     border-bottom: 2px solid $baseColor;
@@ -167,7 +167,7 @@ $baseColor:#06816c;
   }
   p{
     font-size: 0.22rem;
-    color:#b8b8b8;
+    color:#999;
   }
   .profit{
     margin-top:0.2rem;
@@ -185,7 +185,7 @@ $baseColor:#06816c;
   right: 0.3rem;
   top:0.4rem;
   .time{
-    color:#b8b8b8;
+    color:#999;
     font-size: 0.22rem;
     margin-bottom: 0.76rem;
   }
@@ -215,7 +215,7 @@ $baseColor:#06816c;
   color:#666;
   margin:0.44rem auto;
   padding:0 0.4rem;
-  color:#b8b8b8;
+  color:#999;
   p{
     text-indent: 2em;
     text-align: left;

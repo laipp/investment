@@ -88,16 +88,4 @@ $baseColor:#06816c;
     font-size:0.24rem;
     color: #7a95b7;
 }
-input::-webkit-input-placeholder {
-	color: #ccc;
-}
-input:-ms-input-placeholder { // IE10+
-	color: #ccc;
-}
-input:-moz-placeholder { // Firefox4-18
-	color: #ccc;
-}
-input::-moz-placeholder { // Firefox19+
-	color: #ccc;
-}
 </style>

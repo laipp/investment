@@ -22,12 +22,12 @@
     </div>
     <div class="recharge-tips">贝壳除了可支付骑行费用外，<br/>还可到“贝壳共享”公众号兑换各种商品和服务</div>
     <div class="fixed-bottom-btns">
-        <router-link to="/assetAccout">
+        <!-- <router-link to="/assetAccout"> -->
           <div>余额支付</div>
-      </router-link>        
-      <router-link to="/assetAccout">
+      <!-- </router-link>         -->
+      <!-- <router-link to="/assetAccout"> -->
           <div>微信支付</div>
-      </router-link>
+      <!-- </router-link> -->
     </div>
   </div>
 </template>

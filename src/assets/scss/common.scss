@@ -1,11 +1,49 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,
+form,fieldset,legend,button,input,textarea,th,td  {margin:0;padding:0;}
+
+body,button,input,select,textarea{font:12px/1.5     tahoma,arial,\5b8b\4f53;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+
+address,cite,dfn,em,var{font-style:normal;}
+
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+
+small{font-size:12px;}
+
+ul,ol{list-style:none;}
+
+a{text-decoration:none;}
+
+a:hover{text-decoration:none;}
+
+sup{vertical-align:text-top;}
+
+sub{vertical-align:text-bottom;}
+
+legend{color:#000;}
+
+fieldset,img{border:0;}
+
+button,input,select,textarea{font-size:100%;}
+
+table{border-collapse:collapse;border-spacing:0;}
+
+input::-webkit-input-placeholder {
+	color: #ccc;
+}
+input:-ms-input-placeholder { // IE10+
+	color: #ccc;
+}
+input:-moz-placeholder { // Firefox4-18
+	color: #ccc;
+}
+input::-moz-placeholder { // Firefox19+
+	color: #ccc;
+}
 $baseColor:#06816c;
 $borderColor:#e7e7e7;
 $basebgColor:#f3f3f3;
-
-*{
-    margin: 0;
-    padding: 0;
-}
 
 html{
     width: 100%;
@@ -49,15 +87,11 @@ body{
     .mint-header-button{
         line-height: 0.5rem;
     }
-
-  
-
-
 }
   // reset message prompt
-  .mint-msgbox{
-    width:75%;
-    border-radius: 0.1rem;
+    .mint-msgbox{
+        width:75%;
+        border-radius: 0.1rem;
     }
     .mint-msgbox-title{
         font-size: 0.4rem;

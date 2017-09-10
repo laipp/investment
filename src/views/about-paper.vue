@@ -47,7 +47,7 @@ $baseColor:#06816c;
     color:#666;
   }
   p{
-    font-size: 0.24rem;
+    font-size: 0.3rem;
     color:#666;
   }
 }

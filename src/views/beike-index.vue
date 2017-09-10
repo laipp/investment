@@ -56,7 +56,7 @@ $baseColor:#06816c;
 .beike-banner-sec{
   margin-top:0.2rem;
   background: #fff;
-  padding:0 1rem;
+  padding:0.3rem 1rem;
   img{
     width: 100%;
     height:auto;
@@ -94,7 +94,7 @@ $baseColor:#06816c;
 .beike-tips{
   position: fixed;
   left: 0;
-  bottom:3rem;
+  bottom:2rem;
   width: 100%;
   text-align: center;
   color:#b8b8b8;

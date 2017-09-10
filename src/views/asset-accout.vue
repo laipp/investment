@@ -191,5 +191,6 @@ $basebgColor:#f3f3f3;
   margin-top:0;
   line-height:1.2rem;
   text-decoration:underline;
+  color:#7a95b7;
 }
 </style>

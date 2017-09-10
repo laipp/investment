@@ -80,20 +80,9 @@ $baseColor:#06816c;
   right: 0;
   top: -0.5rem;
   padding-left:0.4rem;
-  color:#ccc;
+  color:#999;
   border-left:1px solid #eee;
 }
 
-input::-webkit-input-placeholder {
-	color: #ccc;
-}
-input:-ms-input-placeholder { // IE10+
-	color: #ccc;
-}
-input:-moz-placeholder { // Firefox4-18
-	color: #ccc;
-}
-input::-moz-placeholder { // Firefox19+
-	color: #ccc;
-}
+
 </style>

@@ -54,7 +54,7 @@ $baseColor:#06816c;
   .mint-tab-item-label{
     line-height: 0.6rem;
     font-size: 0.36rem;
-    color:#b8b8b8;
+    color:#999;
   }
   .mint-navbar .mint-tab-item.is-selected{
     border-bottom: 2px solid $baseColor;

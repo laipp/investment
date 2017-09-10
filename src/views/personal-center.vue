@@ -33,8 +33,19 @@
       <div class="page-content-list">
         <div><img src="../assets/images/personal-center-icon4.png" alt=""></div>
         联系我们
-        <router-link to="/contactUs" slot="left"><i></i></router-link>
+        <!-- <router-link to="/contactUs" slot="left"><i></i></router-link> -->
+      </div>      
+      <div class="page-content-list">
+        <div><img src="../assets/images/personal-center-icon4.png" alt=""></div>
+        手机验证
+        <router-link to="/login" slot="left"><i></i></router-link>
+      </div>      
+      <div class="page-content-list">
+        <div><img src="../assets/images/personal-center-icon4.png" alt=""></div>
+        实名认证
+        <router-link to="/loginIdentify" slot="left"><i></i></router-link>
       </div>
+    
     </div>
   </div>
 </template>
