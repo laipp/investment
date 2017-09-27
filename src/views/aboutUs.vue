@@ -13,15 +13,11 @@
 </template>
 
 <script>
-// import headerItem from '@/components/header';
 export default {
   name: 'aboutUs',
   data () {
     return {
     }
-  },
-  components:{
-    // headerItem
   }
 }
 </script>

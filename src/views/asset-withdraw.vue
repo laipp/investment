@@ -30,10 +30,7 @@ export default {
   data () {
     return {
     }
-  },
-  components:{
-    // headerItem
-  },
+  }
   methods:{
     alertFunc(){
       let _this = this;

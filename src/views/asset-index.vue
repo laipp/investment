@@ -51,9 +51,6 @@ export default {
   data () {
     return {
     }
-  },
-  components:{
-    // headerItem
   }
 }
 </script>
