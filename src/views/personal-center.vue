@@ -3,6 +3,12 @@
     <mt-header title="个人中心">
       <router-link to="/" slot="left">
         <mt-button icon="back"></mt-button>
+      </router-link>      
+      <router-link to="/login" slot="right">
+        <mt-button>登陆<i class="divide-line">|</i></mt-button>
+      </router-link>              
+      <router-link to="/loginIdentify" slot="right">
+        <mt-button>认证</mt-button>
       </router-link>
     </mt-header>
     <div class="portrait">
@@ -33,23 +39,10 @@
       <div class="page-content-list">
         <div><img src="../assets/images/personal-center-icon4.png" alt=""></div>
         联系我们
-        <!-- <router-link to="/contactUs" slot="left"><i></i></router-link> -->
       </div>      
-      <div class="page-content-list">
-        <div><img src="../assets/images/personal-center-icon4.png" alt=""></div>
-        手机验证
-        <router-link to="/login" slot="left"><i></i></router-link>
-      </div>      
-      <div class="page-content-list">
-        <div><img src="../assets/images/personal-center-icon4.png" alt=""></div>
-        实名认证
-        <router-link to="/loginIdentify" slot="left"><i></i></router-link>
-      </div>
-    
     </div>
   </div>
 </template>
-
 <script>
 // import headerItem from '@/components/header';
 export default {
@@ -149,5 +142,13 @@ $basebgColor:#f3f3f3;
     background:url('../assets/images/personal-center-icon5.png') no-repeat 0 0;
     background-size: 100% 100%;
   }
+}
+.is-right .divide-line{
+  padding:0 0.1rem;
+  color: #eee;
+}
+.is-right .mint-button-text{
+  display: flex;
+  align-self: center;
 }
 </style>

@@ -30,7 +30,7 @@ export default {
   data () {
     return {
     }
-  }
+  },
   methods:{
     alertFunc(){
       let _this = this;

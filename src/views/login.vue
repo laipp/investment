@@ -44,6 +44,9 @@ $baseColor:#06816c;
 }
 .input-list{
   background: #fff;
+  .mint-field{
+    border-bottom:1px solid #eee;
+  }
   .mint-field .mint-cell-title{
     width:1.7rem;
     padding-left:0.3rem;

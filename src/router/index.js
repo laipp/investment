@@ -12,7 +12,6 @@ import beikeBuy from '@/views/beike-buy' //购买贝壳
 import beikeUse from '@/views/beike-use' //贝壳使用
 import beikeAbout from '@/views/beike-about' //贝壳使用
 import aboutUs from '@/views/aboutUs' //关于我们
-import contactUs from '@/views/contactUs' //联系我们
 import myBike from '@/views/my-bike' // 我的单车
 import bikeBuy from '@/views/bike-buy' // 单车特权
 import aboutBike from '@/views/about-bike' // 关于单车
@@ -46,11 +45,6 @@ export default new Router({
       path: '/aboutUs',
       name: 'aboutUs',
       component: aboutUs
-    },
-    {
-      path: '/contactUs',
-      name: 'contactUs',
-      component: contactUs
     },
     {
       path: '/assetAccout',
